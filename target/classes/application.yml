@@ -1,0 +1,27 @@
+server:
+  port: 8085
+  context-path: /springboot_demo
+  jsp-servlet:
+    init-parameters:
+      development: true
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    driver-class-name: oracle.jdbc.OracleDriver
+    username: hr
+    password: hhr
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+
+
+mybatis:
+  mapper-locations: classpath:com/baizhi/dao/*Mapper.xml
+  type-aliases-package: com.baizhi.entity

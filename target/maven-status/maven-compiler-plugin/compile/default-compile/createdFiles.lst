@@ -1,0 +1,7 @@
+com\baizhi\entity\User.class
+com\baizhi\controller\UserController.class
+com\baizhi\controller\TestController.class
+com\baizhi\service\UserService.class
+com\baizhi\App.class
+com\baizhi\dao\UserDao.class
+com\baizhi\service\impl\UserServiceImpl.class
